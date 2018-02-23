@@ -18,6 +18,10 @@ app.get('/ui/artical-one',function(req,res){
 app.get('/ui/artical-two',function(req,res){
     res.send("artical two will be published");
 });
+app.get('/ui/artical-three',function(req,res)
+{
+    res.send("Artical three will be published ");
+});
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
