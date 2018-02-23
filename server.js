@@ -16,11 +16,11 @@ app.get('/ui/artical-one',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'artical-one.html'));
 });
 app.get('/ui/artical-two',function(req,res){
-    res.send("artical two will be published");
+    res.sendFile(path.join(__dirname, 'ui', 'artical-two.html'));
 });
 app.get('/ui/artical-three',function(req,res)
 {
-    res.send("Artical three will be published ");
+   res.sendFile(path.join(__dirname, 'ui', 'artical-three.html'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
