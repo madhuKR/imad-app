@@ -7,10 +7,10 @@ app.use(morgan('combined'));
  
  var articels ={
 'articel-one' : {
-  title:'Articel one|madhusudan',
-  heading:'Artical one',
-  date:'5 FEB 2018',
-  content: `  
+      title:'Articel one|madhusudan',
+      heading:'Artical one',
+      date:'5 FEB 2018',
+      content: `  
                <p>
                   This is my Content of my Frist artical This is my Content of my Frist artical This is my Content of my Frist artical 
                   This is my Content of my Frist artical  This is my Content of my Frist artical This is my Content of my Frist artical 
@@ -29,27 +29,31 @@ app.use(morgan('combined'));
                 
 
 },
- 'articel-two':{ title:'Articel two|madhusudan',
-  heading:'Artical Two',
-  date:'23 FEB 2018',
-  content: `    <p>
+ 'articel-two':{ 
+      title:'Articel two|madhusudan',
+      heading:'Articel Two',
+      date:'23 FEB 2018',
+      content: `  
+                <p>
                    This is my First artical . This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .
                 </p>
                 
                  `
 },
-' artical-three':{title:'Artical three|madhusudan',
-  heading:'Articel three',
-  date:'26 FEB 2018',
-  content: `    <p> This is my content for my Thrid artical </p> `
+' artical-three':{
+       title:'Artical three|madhusudan',
+       heading:'Articel three',
+       date:'26 FEB 2018',
+       content: `  
+            <p> This is my content for my Thrid artical </p> `
  }
     
 };
 function createTemplate(data){
-    var title=data.title;
-    var heading=data.heading;
-    var date= data.date;
-    var content=data.content;
+    var title = data.title;
+    var heading = data.heading;
+    var date = data.date;
+    var content = data.content;
     
   var htmlTemplate=`<html>
     <head>
