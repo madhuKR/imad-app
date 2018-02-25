@@ -96,7 +96,7 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/:articalName',function(req,res){
     //articalName=artical-one
     //articals[articalName]={} content of artical one
-    var articalName=req.params.articalName;
+    var articalName = req.params.articalName;
     res.send(createTemplate(articals[articalName]));
 });
 
