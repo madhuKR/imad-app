@@ -77,7 +77,7 @@ function createTemplate(data){
                 
             
             <div>
-              feb 23 2018  
+              ${date}  
             </div>
             <div>
                 ${content}
