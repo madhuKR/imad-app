@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
  
  var articals ={
-articalOne : {
+'artical-one' : {
   title:'Artical one|madhusudan',
   heading:'Artical one',
   date:'5 FEB 2018',
@@ -29,7 +29,7 @@ articalOne : {
                 
 
 },
- articalTwo:{ title:'Artical two|madhusudan',
+ 'artical-two':{ title:'Artical two|madhusudan',
   heading:'Artical Two',
   date:'23 FEB 2018',
   content: `    <p>
@@ -38,7 +38,7 @@ articalOne : {
                 
                  `
 },
- articalThree:{title:'Artical three|madhusudan',
+' artical-three':{title:'Artical three|madhusudan',
   heading:'Artical three',
   date:'26 FEB 2018',
   content: `    <p> This is my content for my Thrid artical </p> `
@@ -94,7 +94,11 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 app.get('/ui/:articalName',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'artical-one.html'));
+    //articalName=artical-one
+    //articals[articalName]={} content of artical one
+    var articalName=req.params.articalName;
+    
+    res.send(createTemplate(articals[articalName]));
 });
 app.get('/ui/artical-two',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'artical-two.html'));
