@@ -4,7 +4,20 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+ 
+var articalOne = {
+  title:'Artical one|madhusudan';
+  heading:'Artical one';
+  date:'5 FEB 2018';
+  content:` <p>
+                  This is my First artical . This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .
+                </p>
+                <p>
+                    This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .vThis is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .
+                    
+                </p> `
 
+};
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
