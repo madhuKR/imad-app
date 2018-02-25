@@ -9,9 +9,9 @@ var articalOne ={
     title='Artical one | Madhusudana';
     heading='Artical one';
     date='Fbe 25 2018';
-    content= ' <p>
+    content= '<p>
                   This is my First artical . This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .
-                </p>
+              </p>
                 <p>
                     This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .vThis is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .
                     
