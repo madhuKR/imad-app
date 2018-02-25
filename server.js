@@ -19,6 +19,46 @@ var articalOne = {
                 </p> `
 
 };
+function createTemplate(data){
+    var title=data.title;
+    var heading=data.heading;
+    var date= data.date;
+    var content=data.content;
+    
+  var htmlTemplate=`<html>
+    <head>
+        <title>
+            ${titlr}
+        </title>
+        <meta name="viewport" content= "width=device-width,initial-scale=1" />
+        <link href="/ui/style.css" rel="stylesheet" />
+       
+    </head>
+    <body>
+        <div class = 'Container'>
+            <a herf='/'>Home</a>
+        </div >
+        
+        <h3>
+            ${heading}
+            
+            </h3>
+            <div>
+                
+            
+            <div>
+              feb 23 2018  
+            </div>
+            <div>
+                ${content}
+            </div>
+            </div>
+    </body>
+    
+</html>`;
+return htmlTemplate;
+}
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
