@@ -93,19 +93,13 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-app.get('/ui/artical-one',function(req,res){
+app.get('/ui/:articalName',function(req,res){
     //articalName=artical-one
     //articals[articalName]={} content of artical one
-   // var articalName=req.params.articalName;
-    res.send(createTemplate(articalOne));
+    var articalName=req.params.articalName;
+    res.send(createTemplate(articals[articalName]));
 });
-app.get('/ui/artical-two',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'artical-two.html'));
-});
-app.get('/ui/artical-three',function(req,res)
-{
-   res.sendFile(path.join(__dirname, 'ui', 'artical-three.html'));
-});
+
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
