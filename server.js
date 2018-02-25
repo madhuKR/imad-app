@@ -5,19 +5,45 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
  
-var articalOne = {
+ var articals ={
+articalOne : {
   title:'Artical one|madhusudan',
   heading:'Artical one',
   date:'5 FEB 2018',
+  content: `  
+               <p>
+                  This is my Content of my Frist artical This is my Content of my Frist artical This is my Content of my Frist artical 
+                  This is my Content of my Frist artical  This is my Content of my Frist artical This is my Content of my Frist artical 
+                    
+                </p>
+                <p>
+                  This is my Content of my Frist artical This is my Content of my Frist artical This is my Content of my Frist artical 
+                  This is my Content of my Frist artical  This is my Content of my Frist artical This is my Content of my Frist artical 
+                    
+                </p>
+                <p>
+                  This is my Content of my Frist artical This is my Content of my Frist artical This is my Content of my Frist artical 
+                  This is my Content of my Frist artical  This is my Content of my Frist artical This is my Content of my Frist artical 
+                    
+                </p>`
+                
+
+},
+ articalTwo:{ title:'Artical two|madhusudan',
+  heading:'Artical Two',
+  date:'23 FEB 2018',
   content: `    <p>
                    This is my First artical . This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .
                 </p>
                 
-                <p>
-                    This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .vThis is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .This is my First artical .
-                    
-                </p> `
-
+                 `
+},
+ articalThree:{title:'Artical three|madhusudan',
+  heading:'Artical three',
+  date:'26 FEB 2018',
+  content: `    <p> This is my content for my Thrid artical </p> `
+ }
+    
 };
 function createTemplate(data){
     var title=data.title;
