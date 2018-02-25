@@ -93,11 +93,11 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-app.get('/ui/articalone',function(req,res){
+app.get('/ui/artical-one',function(req,res){
     //articalName=artical-one
     //articals[articalName]={} content of artical one
    // var articalName=req.params.articalName;
-    res.send(createTemplate(articalone));
+    res.send(createTemplate(articalOne));
 });
 app.get('/ui/artical-two',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'artical-two.html'));
