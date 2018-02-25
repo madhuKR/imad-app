@@ -5,9 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
  
- var articals ={
-'artical-one' : {
-  title:'Artical one|madhusudan',
+ var articels ={
+'articel-one' : {
+  title:'Articel one|madhusudan',
   heading:'Artical one',
   date:'5 FEB 2018',
   content: `  
@@ -29,7 +29,7 @@ app.use(morgan('combined'));
                 
 
 },
- 'artical-two':{ title:'Artical two|madhusudan',
+ 'articel-two':{ title:'Articel two|madhusudan',
   heading:'Artical Two',
   date:'23 FEB 2018',
   content: `    <p>
@@ -39,7 +39,7 @@ app.use(morgan('combined'));
                  `
 },
 ' artical-three':{title:'Artical three|madhusudan',
-  heading:'Artical three',
+  heading:'Articel three',
   date:'26 FEB 2018',
   content: `    <p> This is my content for my Thrid artical </p> `
  }
@@ -94,10 +94,10 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 app.get('/:articalName',function(req,res){
-    //articalName=artical-one
-    //articals[articalName]={} content of artical one
-    var articalName = req.params.articalName;
-    res.send(createTemplate(articals[articalName]));
+    //articelName=articel-one
+    //articels[articelName]={} content of artical one
+    var articelName = req.params.articelName;
+    res.send(createTemplate(articels[articelName]));
 });
 
 
