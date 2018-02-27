@@ -4,5 +4,5 @@ element.innerHTML= "New valu";
 var img = document.getElementById('madi');
 img.onlick = function()
 {
-    img.style.marginlLeft = '110px';
+    img.style.marginLeft = '110px';
 };
