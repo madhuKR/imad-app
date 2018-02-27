@@ -1,3 +1,3 @@
 consol.log('Loaded!');
 var element = document.getElementById('main-text');
-element.innerHTML="new valu";
+element.innerHTML= "New valu";
