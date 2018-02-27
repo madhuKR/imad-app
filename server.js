@@ -41,7 +41,8 @@ var articles = {
                 `
                 
      },
- ' article-three': {title:'Articel three|madhusudan',
+ ' article-three': {
+      title:'Articel three|madhusudan',
       heading:'Artical three',
       date:'23 FEB 2018',
       content: `  
